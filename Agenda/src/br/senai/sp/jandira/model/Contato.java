@@ -8,7 +8,14 @@ public class Contato {
 	private String email;
 	private String dtNascimento;
 	private String endereco;
+	private String sexo;
 	
+	public String getSexo() {
+		return sexo;
+	}
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
 	public int getId() {
 		return id;
 	}
