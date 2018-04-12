@@ -10,7 +10,7 @@ import br.senai.sp.jandira.jdbc.Conexao;
 public class ContatoDAO {
 	private ResultSet resultado;
 	private PreparedStatement stm;
-	
+	// RESULTSET É UM OBJETO QUE ARMAZENA INFORMAÇAÕES DO BDA
 	public ResultSet getContatos(){
 		String consulta = "SELECT * FROM contatos ORDER BY nome ASC";
 		resultado = null;

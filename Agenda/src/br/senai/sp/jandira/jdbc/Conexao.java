@@ -16,14 +16,15 @@ public class Conexao {
 		// comando que permite que ele se conecte com o access
 		try { //caminho do access
 			Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-			String dbURL ="jdbc:ucanaccess://C:/Users/17259224/Documents/agenda.accdb";
-			//String dbURL ="jdbc:ucanaccess:////10.107.134.23/banco/agenda.accdb";
+			//String dbURL ="jdbc:ucanaccess://C:/Users/17259224/Documents/agenda.accdb";
+			String dbURL ="jdbc:ucanaccess:////10.107.134.3/banco2/agenda.accdb";
 			con = DriverManager.getConnection(dbURL);			
 			
 		}catch (Exception erro){ //tratamento de erro
 			JOptionPane.showMessageDialog(null,
 					"Nao foi possivel concetar-se com o banco de dados",
 					"ERRO!", JOptionPane.ERROR_MESSAGE);
+			System.out.println(erro.getMessage());
 		}
 		
 		return con;
