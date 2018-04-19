@@ -5,6 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
+
+import br.senai.sp.jandira.dao.ContatoDAO;
+import br.senai.sp.jandira.model.Contato;
+import br.senai.sp.jandira.view.FrmContatos;
 
 public class Conexao {
 	// criando o atributo estatico 
@@ -16,8 +21,8 @@ public class Conexao {
 		// comando que permite que ele se conecte com o access
 		try { //caminho do access
 			Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-			//String dbURL ="jdbc:ucanaccess://C:/Users/17259224/Documents/agenda.accdb";
-			String dbURL ="jdbc:ucanaccess:////10.107.134.3/banco2/agenda.accdb";
+			//String dbURL ="jdbc:ucanaccess://C:/Users/17259224/Documents/12abril/agenda.accdb";
+			String dbURL ="jdbc:ucanaccess:////10.107.134.23/banco/agenda.accdb";
 			con = DriverManager.getConnection(dbURL);			
 			
 		}catch (Exception erro){ //tratamento de erro
@@ -42,5 +47,7 @@ public class Conexao {
 			}
 		}	
 	}
+	
+	
 	
 }

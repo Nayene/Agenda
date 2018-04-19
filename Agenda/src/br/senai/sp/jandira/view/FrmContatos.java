@@ -28,11 +28,56 @@ public class FrmContatos extends JFrame {
 	private JTextField textID;
 	private JTextField textNome;
 	private JTextField textEmail;
-	private JTextField textField_1;
+	private JTextField textDtNasc;
 	private JTextField textTel;
 	private JTextField textCel;
 	private final JButton button_2 = new JButton("");
+	private JComboBox cbSexo;
+	private JTextArea textEndereco;
 
+
+	public void setTextEndereco(String endereco) {
+		this.textEndereco.setText(endereco);
+	}
+
+
+	public void setTextID(int id) {
+		this.textID.setText(String.valueOf(id));
+	}
+
+
+	public void setTextNome(String nome) {
+		this.textNome.setText(nome); //**
+	}
+
+
+	public void setTextEmail(String email) {
+		this.textEmail.setText(email);
+	}
+
+
+	public void setTextDtNasc(String dtNasc ) {
+		this.textDtNasc.setText(dtNasc);
+	}
+
+
+	public void setTextTel(String tel) {
+		this.textTel.setText(tel);
+	}
+
+
+	public void setTextCel(String cel) {
+		this.textCel.setText(cel);
+	}
+
+
+	public void setCbSexo(String sexo) {
+		if (sexo.equals("M")){
+			cbSexo.setSelectedIndex(1);
+		}else{
+			cbSexo.setSelectedIndex(0);
+		}
+	}
 	
 	public FrmContatos(String operacao) {
 		setTitle("Contatos");
@@ -98,20 +143,20 @@ public class FrmContatos extends JFrame {
 		textEmail.setBounds(25, 110, 271, 20);
 		painelDados.add(textEmail);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(25, 166, 127, 20);
-		painelDados.add(textField_1);
+		textDtNasc = new JTextField();
+		textDtNasc.setColumns(10);
+		textDtNasc.setBounds(25, 166, 127, 20);
+		painelDados.add(textDtNasc);
 		
 		JLabel lblDataNascimento = new JLabel("Data Nascimento:");
 		lblDataNascimento.setFont(new Font("Arial Unicode MS", Font.PLAIN, 14));
 		lblDataNascimento.setBounds(25, 141, 116, 14);
 		painelDados.add(lblDataNascimento);
 		
-		JComboBox comboBoxSexo = new JComboBox();
-		comboBoxSexo.setModel(new DefaultComboBoxModel(new String[] {"Femino", "Masculino"}));
-		comboBoxSexo.setBounds(332, 110, 127, 20);
-		painelDados.add(comboBoxSexo);
+		cbSexo = new JComboBox();
+		cbSexo.setModel(new DefaultComboBoxModel(new String[] {"Femino", "Masculino"}));
+		cbSexo.setBounds(332, 110, 127, 20);
+		painelDados.add(cbSexo);
 		
 		JLabel lblSexo = new JLabel("Sexo:");
 		lblSexo.setToolTipText("");
@@ -124,7 +169,7 @@ public class FrmContatos extends JFrame {
 		lblTelefone.setBounds(180, 141, 116, 14);
 		painelDados.add(lblTelefone);
 		
-		JLabel lblCelular = new JLabel("Celular");
+		JLabel lblCelular = new JLabel("Celular:");
 		lblCelular.setFont(new Font("Arial Unicode MS", Font.PLAIN, 14));
 		lblCelular.setBounds(332, 141, 116, 14);
 		painelDados.add(lblCelular);
@@ -148,7 +193,7 @@ public class FrmContatos extends JFrame {
 		scrollPane.setBounds(25, 224, 438, 69);
 		painelDados.add(scrollPane);
 		
-		JTextArea textEndereco = new JTextArea();
+		textEndereco = new JTextArea();
 		scrollPane.setViewportView(textEndereco);
 		button_2.setForeground(Color.BLACK);
 		button_2.setToolTipText("SALVAR");
@@ -166,4 +211,7 @@ public class FrmContatos extends JFrame {
 		button.setBounds(434, 417, 58, 55);
 		painelPrincipal.add(button);
 	}
+
+
+	
 }

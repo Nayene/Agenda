@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\17259224\Documents\12abril\GIT\Agenda\.git">
+			<item value="false"/>
+			<item value="17259224 &lt;17259224@DSN1271058222.cfp127aluno.local&gt;"/>
+			<item value="atualização de 16 de abril "/>
+			<item value="17259224 &lt;17259224@DSN1271058222.cfp127aluno.local&gt;"/>
+			<item value="bcccfbad0d2a33ca69e9401341e615dbe499cd0c"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

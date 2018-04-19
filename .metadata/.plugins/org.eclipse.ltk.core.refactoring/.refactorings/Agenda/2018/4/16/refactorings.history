@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;tabelaConatos&apos; in &apos;br.senai.sp.jandira.view.FrmAgenda&apos; to &apos;tabelaContatos&apos;&#x0D;&#x0A;- Original project: &apos;Agenda&apos;&#x0D;&#x0A;- Original element: &apos;br.senai.sp.jandira.view.FrmAgenda.tabelaConatos&apos;&#x0D;&#x0A;- Renamed element: &apos;br.senai.sp.jandira.view.FrmAgenda.tabelaContatos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;tabelaConatos&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;br.senai.sp.jandira.view{FrmAgenda.java[FrmAgenda^tabelaConatos" name="tabelaContatos" references="true" setter="false" stamp="1523882995369" textual="false" version="1.0"/>
+</session>
